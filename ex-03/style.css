@@ -81,24 +81,24 @@ table caption {
 
 .numero_atomico {
     font-weight: 100px;
-    font-size: 0.6em;
+    font-size: 0.5em;
     text-align: left;
     margin-left: 5px;
 }
 
 .simbolo_elemento {
     font-weight: 900px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .nome_elemento {
     font-weight: 100px;
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
 
 .massa_atomica {
     font-weight: 100px;
-    font-size: 0.6em;
+    font-size: 0.5em;
 }
 
 .legenda p {
@@ -117,11 +117,11 @@ table {
 }
 
 td {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    min-width: 60px;
     text-align: center;
-    padding: 3px;
-    border: 2px solid;
+    padding: 1px;
+    border: 1px solid;
 }
 
 .grupo,
@@ -150,7 +150,7 @@ ul li:hover {
 
 /* Legenda da tabela */
 .legenda {
-    width: 60%;
+    width: 70vw;
     font-size: 1em;
     display: flex;
     align-items: inline-block;
@@ -164,7 +164,7 @@ ul li {
     border: none;
     line-height: 30px;
 }
-/* Box da legenda */
+/* Box das legendas */
 li:before {
     content: ' ';
     display: inline-block;
@@ -176,3 +176,76 @@ li:before {
     position: relative;
     top: .25em;
 }
+
+/* Cores */
+.bg_nao_metais_diatomicos {
+    background-color: var(--nao_metais_diatomicos) !important;
+    font-weight: 400px;
+}
+
+.bg_gases_nobres {
+    background-color: var(--gases_nobres) !important;
+   
+}
+
+.bg_metais_alcalinoterrosos {
+    background-color: var(--metais_alcalinoterrosos) !important;
+}
+
+.bg_metais_alcalinos {
+    background-color: var(--metais_alcalinos) !important;
+    color: white;
+}
+
+.bg_semimetais {
+    background-color: var(--semimetais) !important;
+}
+
+.bg_metais_pos_transicao {
+    background-color: var(--metais_pos_transicao) !important;
+}
+
+.bg_metais_de_transicao {
+    background-color: var(--metais_de_transicao) !important;
+}
+
+.bg_nao_metais_poliatomicos {
+    background-color: var(--nao_metais_poliatomicos) !important;
+}
+
+.bg_lantanideos {
+    background-color: var(--lantanideos) !important;
+}
+
+.bg_actinideos {
+    background-color: var(--actinideos) !important;
+}
+
+.bg_prop_desconhecidas {
+    background-color: var(--prop_desconhecidas) !important;
+}
+
+/* Containers e alinhamento*/
+
+.container {
+    width: 70vw;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+.img {
+    display: flex; 
+    align-items: center;
+}
+
+img {
+    width: 5%vw; 
+    min-width: 100px;
+    margin: auto;
+}
+
+/* Tabela de Informações dos Elementos */
+
