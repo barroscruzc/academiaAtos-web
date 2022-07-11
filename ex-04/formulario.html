@@ -14,13 +14,17 @@
     crossorigin="anonymous"></script>
   <title>Formulário</title>
 <style>
- form {
+ form fieldset {
   width: 70vw;
-  align-content: center;
  }
 
  .container {
   margin: 80px auto;
+  align-content: center;
+ }
+
+ textarea{
+    text-align: justify;
  }
 </style>
 </head>
@@ -28,6 +32,7 @@
 <body>
   <div class="container">
     <form id="formulario">
+    <fieldset>
       <!--Dados Pessoais-->
       <div class="row">
         <div class="col">
@@ -141,18 +146,34 @@
       </div>
 
       <!--Aceite dos termos e informativos-->
-      <div class="row">
-        <div class="col">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Aceita Termos" id="termos">
-            <label class="form-check-label" for="termos">
-              Declaro que li e aceito os Termos e Condições acima
-            </label>
-          </div>
-        </div>
+      
         <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <textarea class="form-control" rows="8" readonly>
+    TERMOS E CONDIÇÕES
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur dictum pharetra. Nulla tellus enim, efficitur ut accumsan quis, elementum ut nisl. Vestibulum rhoncus orci lectus, sed elementum lectus vestibulum eget. Fusce aliquam velit in nunc ultrices eleifend. Mauris ultricies nisi vehicula diam blandit posuere. Suspendisse malesuada nibh sed lacus consequat, eu rutrum est ullamcorper. Phasellus fermentum tempus felis.
+
+    Mauris leo velit, iaculis nec turpis quis, aliquet euismod quam. Vivamus efficitur eros vel tortor facilisis, a tincidunt lorem pretium. Sed vel rutrum mi. Sed luctus mattis auctor. Vivamus convallis velit sit amet dui feugiat, id tincidunt urna fringilla. Quisque faucibus tortor a libero euismod, non dignissim nulla convallis. Donec non enim id ex egestas tempor vel non arcu. Proin id neque nulla. Nulla vel condimentum lectus, in dictum tortor. Quisque quis lacus et dui condimentum pellentesque non eget ante. In porta elit magna, non varius ipsum feugiat vel. Fusce ullamcorper tristique ipsum, ac ultricies nisl porttitor in. Phasellus eu sem a justo vulputate laoreet nec eget velit.
+
+    Ut faucibus consectetur quam, in suscipit nisl malesuada in. Nullam a leo ullamcorper, egestas nisl ut, tincidunt risus. Etiam tellus libero, imperdiet eu mi sit amet, pulvinar suscipit nibh. Vivamus ut tortor est. Etiam a posuere eros. Duis iaculis est vel malesuada dictum. Quisque a vehicula orci. Praesent aliquet dui nec semper pellentesque. Quisque rhoncus metus sit amet imperdiet iaculis. Sed et nunc enim.
+
+    Praesent lorem nunc, tincidunt eget massa ut, dapibus egestas nisl. Mauris ipsum justo, porta eu ornare id, iaculis sit amet quam. Sed et ante posuere, sodales massa ut, fermentum libero. Pellentesque neque nulla, elementum sed justo eu, consectetur fermentum dolor. Phasellus tempor ligula ac sem lacinia, et volutpat erat pretium. Proin vel nibh nisl. Nullam rutrum venenatis tempor. Praesent pellentesque convallis aliquam. Fusce fringilla vitae ipsum sit amet viverra. Vestibulum placerat risus sed est tempor euismod. Duis maximus augue vitae tellus finibus, non tincidunt erat posuere. Sed eu feugiat ex, lobortis hendrerit ipsum. Etiam pellentesque arcu a varius tristique.
+                     </textarea>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="Aceita Termos" id="termos">
+                    <label class="form-check-label" for="termos">
+                      Declaro que li e aceito os Termos e Condições acima
+                    </label>
+                  </div>
+                </div>
           <div class="col">
-            <div class="form-check">
+            <div class="form-check mb-3">
               <input class="form-check-input" type="checkbox" value="Aceita Informativos"
                 id="informativo">
               <label class="form-check-label" for="termos">
@@ -160,8 +181,10 @@
               </label>
             </div>
           </div>
+          <button class="btn btn-lg btn-primary" id="btn" onClick="enviar()">Salvar</button>
+         </fieldset>
     </form>
-    <button class="btn-lg bg-success" id="btn" onclick="enviar()">Salvar</button>
+    
   </div>
 
     <div class="container">
