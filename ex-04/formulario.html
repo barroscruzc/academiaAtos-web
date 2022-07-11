@@ -14,7 +14,7 @@
     crossorigin="anonymous"></script>
   <title>Formulário</title>
 <style>
- form fieldset {
+ form {
   width: 70vw;
  }
 
@@ -25,6 +25,10 @@
 
  textarea{
     text-align: justify;
+ }
+
+ .hidden {
+  display: none;
  }
 </style>
 </head>
@@ -187,7 +191,7 @@
     
   </div>
 
-    <div class="container">
+    <div class="container hidden">
     <form>
         <fieldset disabled>
         <label class="form-label">Nome: </label><input type="text" class="form-control" id="nomeOk" readonly></input>

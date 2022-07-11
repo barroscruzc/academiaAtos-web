@@ -10,6 +10,14 @@ function alertar(){
     alert("Formulário enviado!")
 }
 
+function revelar(){
+    var container = document.querySelector(".hidden")
+
+        if(container.style.display = 'none'){    
+           container.style.display = 'block';
+        }
+}
+
 function apagaForm(){
     var forms = document.getElementById('formulario')
     forms.reset()
@@ -82,5 +90,6 @@ function enviar() {
     informativoOk.value = informativo.value;
 
     apagaForm()
+    revelar()
 }
 
