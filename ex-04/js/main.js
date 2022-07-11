@@ -13,65 +13,65 @@ function enviar() {
 
     alertar()
 
-    var nome = document.getElementById('nome')
+    var nome = document.querySelector('#nome')
     document.getElementById('nomeOk').value = nome.value;
 
-    var sobrenome = document.getElementById('sobrenome')
+    var sobrenome = document.querySelector('#sobrenome')
     document.getElementById('sobrenomeOk').value = sobrenome.value;
 
-    var email = document.getElementById('email')
+    var email = document.querySelector('#email')
     var emailOk = document.getElementById('emailOk')
     emailOk.value = email.value;
 
-    var login = document.getElementById('login')
+    var login = document.querySelector('#login')
     var loginOk = document.getElementById('loginOk')
     loginOk.value = login.value;
 
-    var senha = document.getElementById('senha')
+    var senha = document.querySelector('#senha')
     var senhaOk = document.getElementById('senhaOk')
     senhaOk.value = senha.value;
 
-    var cep = document.getElementById('cep')
+    var cep = document.querySelector('#cep')
     var cepOk = document.getElementById('cepOk')
     cepOk.value = cep.value;
 
-    var endereco = document.getElementById('endereco')
-    var enderecoOk = document.getElementById('enderecoOk')
-    enderecoOk.value = endereco.value;
+    var rua = document.querySelector('#rua')
+    var ruaOk = document.getElementById('ruaOk')
+    ruaOk.value = rua.value;
 
-    var complemento = document.getElementById('complemento')
+    var complemento = document.querySelector('#complemento')
     var complementoOk = document.getElementById('complementoOk')
     complementoOk.value = complemento.value;
 
-    var bairro = document.getElementById('bairro')
+    var bairro = document.querySelector('#bairro')
     var bairroOk = document.getElementById('bairroOk')
     bairroOk.value = bairro.value;
 
-    var cidade = document.getElementById('cidade')
+    var cidade = document.querySelector('#cidade')
     var cidadeOk = document.getElementById('cidadeOk')
     cidadeOk.value = cidade.value;
 
-    var estado = document.getElementById('estado')
+    var estado = document.querySelector('#estado')
     var estadoOk = document.getElementById('estadoOk')
     estadoOk.value = estado.value;
 
-    var github = document.getElementById('github')
+    var github = document.querySelector('#github')
     var githubOk = document.getElementById('githubOk')
     githubOk.value = github.value;
 
-    var academia = document.getElementById('academia')
+    var academia = document.querySelector('#academia')
     var academiaOk = document.getElementById('academiaOk')
     academiaOk.value = academia.value;
 
-    var professor = document.getElementById('professor')
+    var professor = document.querySelector('#professor')
     var professorOk = document.getElementById('professorOk')
     professorOk.value = professor.value;
 
-    var termos = document.getElementById('termos')
+    var termos = document.querySelector('#termos')
     var termosOk = document.getElementById('termosOk')
     termosOk.value = termos.value;
 
-    var informativo = document.getElementById('informativo')
+    var informativo = document.querySelector('#informativo')
     var informativoOk = document.getElementById('informativoOk')
     informativoOk.value = informativo.value;
 }

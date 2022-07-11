@@ -31,7 +31,7 @@
 
 <body>
   <div class="container">
-    <form id="formulario">
+    <form id="formulario" action="javascript: enviar()">
     <fieldset>
       <!--Dados Pessoais-->
       <div class="row">
@@ -181,7 +181,7 @@
               </label>
             </div>
           </div>
-          <button class="btn btn-lg btn-primary" id="btn" onClick="enviar()">Salvar</button>
+          <button type="submit" class="btn btn-lg btn-primary" id="btn">Salvar</button>
          </fieldset>
     </form>
     
@@ -196,7 +196,7 @@
         <label class="form-label">Login: </label><input type="text" class="form-control" id="loginOk" readonly></input>
         <label class="form-label">Senha: </label><input type="text" class="form-control" id="senhaOk" readonly></input>
         <label class="form-label">CEP: </label><input type="text" class="form-control" id="cepOk" readonly></input>
-        <label class="form-label">Endereço: </label><input type="text" class="form-control" id="enderecoOk"> </input>
+        <label class="form-label">Endereço: </label><input type="text" class="form-control" id="ruaOk"> </input>
         <label class="form-label">Complemento </label><input type="text" class="form-control" id="complementoOk" readonly></input>
         <label class="form-label">Bairro: </label><input type="text" class="form-control" id="bairroOk" readonly></input>
         <label class="form-label">Cidade: </label><input type="text" class="form-control" id="cidadeOk" readonly></input>
