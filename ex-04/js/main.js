@@ -6,7 +6,12 @@ function setLogin() {
 document.getElementById('nome').addEventListener('change', setLogin)
 document.getElementById('sobrenome').addEventListener('change', setLogin)
 
+function alertar(){
+    alert("Formulário enviado!")
+}
 function enviar() {
+
+    alertar()
 
     var nome = document.getElementById('nome')
     document.getElementById('nomeOk').value = nome.value;
@@ -69,7 +74,5 @@ function enviar() {
     var informativo = document.getElementById('informativo')
     var informativoOk = document.getElementById('informativoOk')
     informativoOk.value = informativo.value;
-
-    alert('Formulário enviado!')
 }
 
