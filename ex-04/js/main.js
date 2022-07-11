@@ -3,8 +3,6 @@ function setLogin() {
     var sobrenome = document.getElementById('sobrenome').value.replace(/([\u0300-\u036f]|[^0-9a-zA-Z])/g, '')
     document.getElementById('login').value = nome + '.' + sobrenome
 }
-document.getElementById('nome').addEventListener('change', setLogin)
-document.getElementById('sobrenome').addEventListener('change', setLogin)
 
 function alertar(){
     alert("Formulário enviado!")
@@ -16,6 +14,10 @@ function revelar(){
         if(container.style.display = 'none'){    
            container.style.display = 'block';
         }
+}
+
+function habilitar(){
+        document.getElementById('termos').disabled = false;
 }
 
 function apagaForm(){
@@ -92,4 +94,10 @@ function enviar() {
     apagaForm()
     revelar()
 }
+
+document.getElementById('nome').addEventListener('change', setLogin)
+
+document.getElementById('sobrenome').addEventListener('change', setLogin)
+
+document.getElementById('textArea').addEventListener('wheel', habilitar)
 
