@@ -9,6 +9,12 @@ document.getElementById('sobrenome').addEventListener('change', setLogin)
 function alertar(){
     alert("Formulário enviado!")
 }
+
+function apagaForm(){
+    var forms = document.getElementById('formulario')
+    forms.reset()
+}
+
 function enviar() {
 
     alertar()
@@ -74,5 +80,7 @@ function enviar() {
     var informativo = document.querySelector('#informativo')
     var informativoOk = document.getElementById('informativoOk')
     informativoOk.value = informativo.value;
+
+    apagaForm()
 }
 
